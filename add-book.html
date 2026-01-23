@@ -131,18 +131,20 @@
         </div>
 
         <!-- Third row -->
-        <div class="row">
+        <div class="row row-cols-1 row-cols-lg-3">
           <!-- Gender form -->
           <div class="col">
-            <label for="formGroupExampleInput2" class="form-label fw-medium"
-              >Genere</label
-            >
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Scegli il genere</option>
-              <option value="1">Uomo</option>
-              <option value="2">Donna</option>
-              <option value="3">Preferisco non specificare</option>
-            </select>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2" class="form-label fw-medium"
+                >Genere</label
+              >
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Scegli il genere</option>
+                <option value="1">Uomo</option>
+                <option value="2">Donna</option>
+                <option value="3">Preferisco non specificare</option>
+              </select>
+            </div>
           </div>
           <!-- Year form -->
           <div class="col">
@@ -171,6 +173,42 @@
                 placeholder="Inserisci il codice ISBN#"
               />
             </div>
+          </div>
+        </div>
+
+        <!-- Grey border -->
+        <hr class="border border-secondary opacity-40" />
+
+        <!-- Fourth row -->
+        <div class="row row-cols-1">
+          <!-- Note form -->
+          <div class="col">
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label fw-medium"
+                >Note</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+                placeholder="Inserisci eventuali note sul libro"
+              ></textarea>
+            </div>
+          </div>
+
+          <!-- Ceck box -->
+          <div class="col">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck" />
+              <label class="form-check-label" for="gridCheck">
+                Disponibile anche in digitale
+              </label>
+            </div>
+          </div>
+
+          <!-- Add book button -->
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary mt-3">Aggiungi libro</button>
           </div>
         </div>
       </div>
