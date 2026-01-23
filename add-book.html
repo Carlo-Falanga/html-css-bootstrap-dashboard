@@ -125,19 +125,53 @@
                 id="formGroupExampleInput"
                 placeholder="Inserisci il titolo del libro"
               />
-              <div class="text-secondary">Titolo versione italiana</div>
+              <div class="text-secondary pt-1">Titolo versione italiana</div>
             </div>
           </div>
         </div>
 
         <!-- Third row -->
         <div class="row">
-            <!-- Gneder form -->
-          <div class="col">Column</div>
+          <!-- Gender form -->
+          <div class="col">
+            <label for="formGroupExampleInput2" class="form-label fw-medium"
+              >Genere</label
+            >
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Scegli il genere</option>
+              <option value="1">Uomo</option>
+              <option value="2">Donna</option>
+              <option value="3">Preferisco non specificare</option>
+            </select>
+          </div>
           <!-- Year form -->
-          <div class="col">Column</div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label fw-medium"
+                >Anno di pubblicazione</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Inserisci l'anno"
+              />
+            </div>
+          </div>
           <!-- ISBN code form -->
-          <div class="col">Column</div>
+          <div class="col">
+            <div class="mb-3">
+              <label for="formGroupExampleInput" class="form-label fw-medium"
+                >ISNB#</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="formGroupExampleInput"
+                placeholder="Inserisci il codice ISBN#"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </main>
